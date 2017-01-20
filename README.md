@@ -7,7 +7,7 @@
 
 ```javascript
 // Starting: P20160000 <Student-Name> <Student-Surname>
-	if (text === 'Πού βρίσκεσαι τώρα;') {
+	if (text === 'Πού βρίσκεσαι τώρα') {
         	        sendTextMessage(sender, "Στην Κέρκυρα")
                 	continue
             	}             
