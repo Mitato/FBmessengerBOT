@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 
 // for Facebook verification
 app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === 'ca3db5b4-cc55-4e77-89e7-89e8e09352dd') {
+    if (req.query['hub.verify_token'] === '<you-put-here-yours>') {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
@@ -65,8 +65,8 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-
-const token ="EAAY4OoNGBEEBAEEvIdiDMZCACGJ5l4mJ7zfIBn71DZCBaOqMsnVZAXZATsmudvLFZBBzTo6JjCo4ob5mo5hKmOIDCXI5mrob8al8ZB2s5l12e8ij8ct29LJvhL4oBCa2EeDyqqzgl5GaSDeaskZCbm2AxLUYyuMIOLwjdwjhBvpbgZDZD"
+// research_fb_page_token is set at Heroku's "Config Vars"
+const token ="research_fb_page_token"
 
 // ... 
 
@@ -91,9 +91,8 @@ function sendTextMessage(sender, text) {
 
 
 
-// ...from "https://github.com/diogenisAl/messenger-bot-tutorial":
-// Copy the code below to index.js to send an test message back as two cards.
-// change #21
+// ...from "https://github.com/diogenisAl/messenger-bot-tutorial" (forked repository) :
+
 
 function sendGenericMessage(sender) {
     let messageData = {
