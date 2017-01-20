@@ -52,8 +52,8 @@ app.post('/webhook/', function (req, res) {
 
 // from here...
 
-	if (text === 'Ωραίος!!') {
-        	        sendTextMessage(sender, "Πρώτοοο!!!")
+	if (text === 'Γεια') {
+        	        sendTextMessage(sender, "Χαίρετε!!!")
                 	continue
             	}
 
