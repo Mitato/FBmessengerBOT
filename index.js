@@ -52,7 +52,7 @@ app.post('/webhook/', function (req, res) {
 
 // from here...
 
-	if (text === 'Ωραίος') {
+	if (text === 'Ωραίος!!') {
         	        sendTextMessage(sender, "Πρώτοοο!!!")
                 	continue
             	}
