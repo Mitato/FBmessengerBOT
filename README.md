@@ -3,13 +3,11 @@
 * Αντιγράψτε (**fork**) το παρόν repository στον λογαριασμό σας στο Github.
 * Στο αρχείο **index**, προσθέστε τον κώδικά σας που αφορά στις ερωτήσεις-απαντήσεις του chat bot της εργασίας σας.
 Παράδειγμα του/της P20160000:
-
 // Starting: P20160000 <Student-Name> <Student-Surname>
 if (text === 'Πού βρίσκεσαι τώρα') {
         	        sendTextMessage(sender, "Στην Κέρκυρα")
                 	continue
-            	}
-              
+            	}             
 if (text === 'Τι σπουδάζεις;') {
         	        sendTextMessage(sender, "Πληροφορική")
                 	continue
